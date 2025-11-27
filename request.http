@@ -34,7 +34,7 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "id": 1,
+  "id": 3,
   "name": "Alice Ramírez",
   "email": "hola@google.com"
 }
@@ -53,7 +53,12 @@ Content-Type: application/json
 ###
 
 ### Eliminar un usuario (DELETE)
-DELETE http://localhost:3000/users/2
+DELETE http://localhost:3000/users/3
 Content-Type: application/json
+
+###
+
+### Error request
+GET http://localhost:3000/error
 
 ###
