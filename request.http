@@ -1,0 +1,59 @@
+### Obtener página principal
+GET http://localhost:3000/
+
+###
+
+### Buscar con query parameters
+GET http://localhost:3000/search?termino=expressjs&categoria=framework
+
+###
+
+### Obtener usuario por ID
+GET http://localhost:3000/users/123
+
+###
+
+### Enviar formulario (POST)
+POST http://localhost:3000/form
+Content-Type: application/json
+
+{
+  "nombre": "Juan Guerra",
+  "email": "juan@ejemplo.com"
+}
+
+###
+
+### Obtener usuarios
+GET http://localhost:3000/users
+
+###
+
+### Agregar nuevo usuario (POST)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Alice Ramírez",
+  "email": "hola@google.com"
+}
+
+###
+
+### Modificar un usuario (PUT)
+PUT http://localhost:3000/users/3
+Content-Type: application/json
+
+{
+  "name": "Alice Ramírez",
+  "email": "aliceramirez@kiviu.com"
+}
+
+###
+
+### Eliminar un usuario (DELETE)
+DELETE http://localhost:3000/users/2
+Content-Type: application/json
+
+###
